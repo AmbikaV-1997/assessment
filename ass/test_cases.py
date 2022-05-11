@@ -11,3 +11,5 @@ def test_singleinputString():
 def test_nInputString():
     assert addnum.add("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20")==210;
 
+def test_inputWithNewLinesString():
+    assert addnum.add("1\n2,3")==6;
