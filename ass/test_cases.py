@@ -13,3 +13,8 @@ def test_nInputString():
 
 def test_inputWithNewLinesString():
     assert addnum.add("1\n2,3")==6;
+
+def test_inputWithDelimiterString():
+    assert addnum.add("//;\n1;2")==3;
+    assert addnum.add("//;\n1;2\\-*/")==3;
+    assert addnum.add("//;\n1;\n2,3")==6;
