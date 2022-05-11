@@ -5,5 +5,5 @@ def add(x):
     res = list(map(int, temp))
     sum = 0
     for i in res:
-        sum += i
+        sum = sum + i
     return sum
