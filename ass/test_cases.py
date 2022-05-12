@@ -21,3 +21,5 @@ def test_inputWithDelimiterString():
 
 def test_negativeadd():
     assert addnum.add("-1,4")=="negatives not allowed -1";
+    assert addnum.add("1,-4")=="negatives not allowed -4";
+    
