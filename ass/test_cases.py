@@ -18,3 +18,6 @@ def test_inputWithDelimiterString():
     assert addnum.add("//;\n1;2")==3;
     assert addnum.add("//;\n1;2\\-*/")==3;
     assert addnum.add("//;\n1;\n2,3")==6;
+
+def test_negativeadd():
+    assert addnum.add("-1,4")=="negatives not allowed -1";
